@@ -1,5 +1,5 @@
 <div align="center" id="top"> 
-  <img src="https://raw.githubusercontent.com/angelafy/system-employee/master/screenshot/create-employee.png" width="900" alt="System Employee" />
+  <img src="https://raw.githubusercontent.com/angelafy/Mini-project/master/screenshot/create-employee.png" width="900" alt="System Barang" />
 
   <a href="#">Demo</a>
 
@@ -8,35 +8,35 @@
   <!-- <a href="https://systememployeemain.netlify.app">Demo</a> -->
 </div>
 
-<h1 align="center">System Employee Main</h1>
+<h1 align="center">System Barang</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/angelafy/system-employee?">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/angelafy/Mini-project?">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/angelafy/system-employee?">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/angelafy/Mini-project?">
 
 <!-- commit frequency -->
-  <a href="https://github.com/angelafy/system-employee/commits/main" target="_blank">
-    <img src="https://img.shields.io/github/commit-activity/m/angelafy/system-employee?" alt="Badge showing average commit frequency per month"/>
+  <a href="https://github.com/angelafy/Mini-project/commits/main" target="_blank">
+    <img src="https://img.shields.io/github/commit-activity/m/angelafy/Mini-project?" alt="Badge showing average commit frequency per month"/>
   </a>
 
   <!-- last commit -->
-  <a href="https://github.com/angelafy/system-employee/commits/main" target="_blank">
-    <img src="https://img.shields.io/github/last-commit/angelafy/system-employee?" alt="Badge showing when the last commit was made"/>
+  <a href="https://github.com/angelafy/Mini-project/commits/main" target="_blank">
+    <img src="https://img.shields.io/github/last-commit/angelafy/Mini-project?" alt="Badge showing when the last commit was made"/>
   </a>
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/angelafy/system-employee?">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/angelafy/Mini-project?">
 
-  <a href="https://github.com/angelafy/system-employee/blob/master/LICENSE.md" target="_blank">
-    <img alt="Badge showing project license type" src="https://img.shields.io/github/license/angelafy/system-employee?color=f85149">
+  <a href="https://github.com/angelafy/Mini-project/blob/master/LICENSE.md" target="_blank">
+    <img alt="Badge showing project license type" src="https://img.shields.io/github/license/angelafy/Mini-project?color=f85149">
 
   </a>
 
-  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/angelafy/system-employee?color=56BEB8" /> -->
+  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/angelafy/Mini-project?color=56BEB8" /> -->
 
-  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/angelafy/system-employee?color=56BEB8" /> -->
+  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/angelafy/Mini-project?color=56BEB8" /> -->
 
-  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/angelafy/system-employee?color=56BEB8" /> -->
+  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/angelafy/Mini-project?color=56BEB8" /> -->
 </p>
 
 <!-- Status -->
@@ -92,10 +92,10 @@ Sebelum melakukan setup / installasi, harus sudah menginstall **[Git](https://gi
 
 ```bash
 # Clone project ke direktori lokal 
-$ git clone https://github.com/angelafy/system-employee
+$ git clone https://github.com/angelafy/Mini-project
 
 # Masuk ke dir project
-$ cd system-employee
+$ cd Mini-project
 
 # Install dependencies
 $ npm install
@@ -125,7 +125,7 @@ Copy file .env.example dan ubah nama file menjadi .env lalu sesuaikan degan konf
 | :-------- | :------- | :------------------------- |
 | ` APP_KEY ` | ` base64:Mx6z7+GzDxxrQhnXGeMrjcKmYhIIlHI0q8pKwAyYycI= ` | untuk melakukan enkripsi dan dekripsi data. Ini berfungsi saat Laravel menggunakan fitur enkripsi dan dekripsi, serta dalam proses enkripsi dan dekripsi cookie.  |
 | ` APP_URL `| ` http://localhost ` | untuk menentukan URL dasar dari aplikasi Laravel. Ini akan digunakan oleh beberapa fitur Laravel seperti routing |
-| ` DB_DATABASE `| `laravel_sakkarepmu` | untuk menentukan nama **database** yang akan digunakan oleh aplikasi|
+| ` DB_DATABASE `| `laravel_uts' | untuk menentukan nama **database** yang akan digunakan oleh aplikasi|
 | ` DB_USERNAME `| ` root ` | untuk menentukan **nama** atau **username** database yang akan digunakan oleh aplikasi default **root**|
 | ` DB_PASSWORD `| ` root123 ` | untuk menentukan nama **password** yang akan digunakan oleh aplikasi, Anda harus mengganti **password** dengan password yang sesuai dengan konfigurasi database Anda|
 </details>
@@ -134,7 +134,7 @@ Copy file .env.example dan ubah nama file menjadi .env lalu sesuaikan degan konf
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=laravel_sakkarepmu
+DB_DATABASE=laravel_uts
 DB_USERNAME=root
 DB_PASSWORD=root123
 ```
