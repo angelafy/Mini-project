@@ -11,13 +11,13 @@
                         <h4>Tambah Data Barang</h4>
                     </div>
                     <hr>
-                    {{-- gawe kode barang --}}
+                    {{-- kode barang --}}
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="kode_barang" class="form-label">Kode Barang</label>
                             <input class="form-control @error('kode_barang') is-invalid @enderror" type="text" name="kode_barang" id="kode_barang" value="BRG-{{ old('kode_barang') }}" readonly>
                         </div>
-                        {{-- gawe nama barang --}}
+                        {{-- nama barang --}}
                         <div class="col-md-6 mb-3">
                             <label for="nama_barang" class="form-label">Nama barang</label>
                             <input class="form-control @error('nama_barang') is-invalid @enderror" type="text" name="nama_barang" id="nama_barang" value="{{ old('nama_barang') }}" placeholder="Masukan Nama barang">
@@ -32,12 +32,12 @@
                                 <div class="invalid-feedback">{{ $message }}</div>
                             @enderror
                         </div>
-                        {{-- gawe satuan --}}
+                        {{-- satuan --}}
                         <div class="col-md-6 mb-3">
                             <label for="satuan" class="form-label">Satuan</label>
                             <select name="satuan" id="satuan" class="form-select">
-                                @foreach ($satuans as $satuan_sakkarepmu)
-                                    <option value="{{ $satuan_sakkarepmu->id }}" {{ old('satuan') == $satuan_sakkarepmu->id ? 'selected' : '' }}>{{ $satuan_sakkarepmu->kode_satuan.' - '.$satuan_sakkarepmu->nama_satuan }}</option>
+                                @foreach ($satuans as $satuan)
+                                    <option value="{{ $satuan->id }}" {{ old('satuan') == $satuan->id ? 'selected' : '' }}>{{ $satuan->kode_satuan.' - '.$satuan->nama_satuan }}</option>
                                 @endforeach
                             </select>
                             @error('satuan')
@@ -68,7 +68,7 @@
 
     <script>
         // Generate random string for kode_barang
-        function randomKode_sakkarepmu(length) {
+        function randomCode(length) {
             var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
             var result = '';
             for (var i = 0; i < length; i++) {
@@ -80,7 +80,7 @@
         // Call the function to generate random string and update the kode_barang input
         document.addEventListener('DOMContentLoaded', function() {
             var kode_barang_input = document.getElementById('kode_barang');
-            kode_barang_input.value = 'BRG-' + randomKode_sakkarepmu(3); // gawe selalu generate kode barang anyar
+            kode_barang_input.value = 'BRG-' + randomCode(3);
         });
     </script>
 @endsection

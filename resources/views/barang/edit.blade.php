@@ -52,10 +52,10 @@
                         <div class="col-md-6 mb-3">
                             <label for="satuan" class="form-label">Satuan</label>
                             <select name="satuan" id="satuan" class="form-select">
-                                @foreach ($satuans as $satuan_sakkarepmu)
-                                    <option value="{{ $satuan_sakkarepmu->id }}"
-                                        {{ old('satuan') == $satuan_sakkarepmu->id ? 'selected' : '' }}>
-                                        {{ $satuan_sakkarepmu->kode_satuan . ' - ' . $satuan_sakkarepmu->nama_satuan }}
+                                @foreach ($satuans as $satuan)
+                                    <option value="{{ $satuan->id }}"
+                                        {{ old('satuan') == $satuan->id ? 'selected' : '' }}>
+                                        {{ $satuan->kode_satuan . ' - ' . $satuan->nama_satuan }}
                                     </option>
                                 @endforeach
                             </select>

@@ -24,9 +24,9 @@
                 </thead>
                 <tbody>
                     <tr>
-                        @foreach ($satuans as $satuan_sakkarepmu)
-                            <td>{{ $satuan_sakkarepmu->kode_satuan }}</td>
-                            <td>{{ $satuan_sakkarepmu->nama_satuan }}</td>
+                        @foreach ($satuans as $satuan)
+                            <td>{{ $satuan->kode_satuan }}</td>
+                            <td>{{ $satuan->nama_satuan }}</td>
                             <td>@include('satuan.actions')</td>
                     </tr>
                     @endforeach
