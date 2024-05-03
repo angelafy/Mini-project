@@ -1,9 +1,5 @@
 <div align="center" id="top"> 
-  <img src="https://raw.githubusercontent.com/angelafy/Mini-project/master/screenshot/create-employee.png" width="900" alt="System Barang" />
-
-  <a href="#">Demo</a>
-
-&#xa0;
+  
 
   <!-- <a href="https://systememployeemain.netlify.app">Demo</a> -->
 </div>
